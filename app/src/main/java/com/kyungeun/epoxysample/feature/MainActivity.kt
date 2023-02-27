@@ -1,7 +1,8 @@
-package com.kyungeun.epoxysample
+package com.kyungeun.epoxysample.feature
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kyungeun.epoxysample.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
