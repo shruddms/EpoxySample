@@ -10,6 +10,7 @@ import com.kyungeun.epoxysample.R
 import com.kyungeun.epoxysample.data.model.Project
 import com.kyungeun.epoxysample.databinding.ItemProjectBinding
 
+@EpoxyDataBindingLayouts
 @EpoxyModelClass(layout = R.layout.item_project)
 abstract class MainItemViewModel : EpoxyModelWithHolder<MainItemViewModel.MainItemViewHolder>() {
 
