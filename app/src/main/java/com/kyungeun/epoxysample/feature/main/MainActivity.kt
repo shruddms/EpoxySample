@@ -34,8 +34,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupObservers() {
         viewModel.userProjects.observe(this) {
-            Log.d("MainActivity", "setupObservers: ${it.data}")
-//            mainController.setData(it.data!!)
+            if (it.data != null) {
+                mainController.setData(it.data)
+            }
         }
     }
 }

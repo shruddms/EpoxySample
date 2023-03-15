@@ -17,6 +17,7 @@ class MainController  : EpoxyController() {
     private fun buildItem(project: Project) {
         project.let {
             MainItemViewModel_()
+                .id(it.id)
                 .project(it)
                 .addTo(this)
         }
