@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EpoxySample</string>
+    <string name="title">Git Repos</string>
 </resources>

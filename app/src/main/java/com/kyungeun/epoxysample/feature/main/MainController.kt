@@ -7,7 +7,6 @@ class MainController  : EpoxyController() {
 
     private val itemList = mutableListOf<Project>()
 
-
     fun setData(list: List<Project>) {
         itemList.clear()
         itemList.addAll(list)
@@ -22,7 +21,6 @@ class MainController  : EpoxyController() {
                 .addTo(this)
         }
     }
-
 
     override fun buildModels() {
         itemList.forEach { data ->

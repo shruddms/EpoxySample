@@ -7,12 +7,10 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val repository: GithubRepository
+    repository: GithubRepository
 ) : ViewModel() {
 
     private val name = "shruddms"
-
-    val profile = repository.getProfile(name)
 
     val userProjects = repository.getUserProjects(name)
 }

@@ -1,9 +1,8 @@
 package com.kyungeun.epoxysample.feature.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kyungeun.epoxysample.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupEpoxyRecyclerView() {
         binding.rvHome.layoutManager = LinearLayoutManager(this)
-
         binding.rvHome.setController(mainController)
     }
 
