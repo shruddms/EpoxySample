@@ -1,6 +1,7 @@
 package com.kyungeun.epoxysample.feature.main
 
 import android.view.View
+import android.view.animation.DecelerateInterpolator
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyDataBindingLayouts
 import com.airbnb.epoxy.EpoxyHolder
@@ -24,10 +25,15 @@ abstract class MainItemViewModel : EpoxyModelWithHolder<MainItemViewModel.MainIt
         binding!!.tvName.text = project.name
         binding!!.tvDescription.text = project.description
 
-        holder.itemView.animate()
-            .alpha(1f)
-            .setDuration(300)
-            .start()
+        // animation
+        holder.itemView.apply {
+            alpha = 0f
+            animate()
+                .alpha(1f)
+                .setDuration(500)
+                .setInterpolator(DecelerateInterpolator())
+                .start()
+        }
     }
 
     override fun unbind(holder: MainItemViewHolder) {

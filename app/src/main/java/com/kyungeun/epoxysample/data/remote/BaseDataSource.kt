@@ -1,6 +1,5 @@
 package com.kyungeun.epoxysample.data.remote
 
-
 import com.kyungeun.epoxysample.util.Resource
 import retrofit2.Response
 import java.io.IOException
