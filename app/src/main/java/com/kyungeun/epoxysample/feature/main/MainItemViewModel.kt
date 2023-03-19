@@ -23,6 +23,11 @@ abstract class MainItemViewModel : EpoxyModelWithHolder<MainItemViewModel.MainIt
         binding = ItemProjectBinding.bind(holder.itemView)
         binding!!.tvName.text = project.name
         binding!!.tvDescription.text = project.description
+
+        holder.itemView.animate()
+            .alpha(1f)
+            .setDuration(300)
+            .start()
     }
 
     override fun unbind(holder: MainItemViewHolder) {
